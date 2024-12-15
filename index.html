@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #97733f;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #b9a542;
+            margin-top: 50px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            background-color: #e08d1a;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-item h3 {
+            margin: 10px;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .gallery-item p {
+            margin: 10px;
+            color: #e1d5bf;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Gallery</h1>
+        <div class="gallery">
+            <a class="gallery-item" href="https://johnwillfordfuaso.github.io/MusicFest/" target="_blank" rel="noopener noreferrer">
+                <img src="https://drive.google.com/thumbnail?id=1-aKOb_LN4C5NOjTKFWYNnq051Ro6F2t3" alt="Music Festival Webpage">
+                <h3>Project 1</h3>
+                <p>Music Festival Webpage</p>
+            </a>
+
+            <a class="gallery-item" href="https://johnwillfordfuaso.github.io/Dashboard/" target="_blank" rel="noopener noreferrer">
+                <img src="https://drive.google.com/thumbnail?id=1UUQJt0hNmrKujQzu-wJrKHGDzBmJDgbL" alt="Dashboard">
+                <h3>Project 2</h3>
+                <p>Dashboard Page</p>
+            </a>
+
+            <a class="gallery-item" href="https://johnwillfordfuaso.github.io/Old-website/" target="_blank" rel="noopener noreferrer">
+                <img src="https://drive.google.com/thumbnail?id=166eAneRFM48vYspHKMqEONFUL3334aSU" alt="Ebay Website">
+                <h3>Project 3</h3>
+                <p>Ebay Website</p>
+            </a>
+
+            <a class="gallery-item" href="https://johnwillfordfuaso.github.io/website/" target="_blank" rel="noopener noreferrer">
+                <img src="https://drive.google.com/thumbnail?id=16SZ3GA0zEF3hITc0U24qsjPcZBiUrPMa" alt="Personal Website">
+                <h3>Project 4</h3>
+                <p>Personal Website</p>
+            </a>
+
+            <a class="gallery-item" href="https://johnwillfordfuaso.github.io/fuaso-blog/" target="_blank" rel="noopener noreferrer">
+                <img src="https://drive.google.com/thumbnail?id=1HahEkH_REo1PeV4EYc_inlRLudz41NTn" alt="Blog">
+                <h3>Project 5</h3>
+                <p>Blog</p>
+            </a>
+
+            <a class="gallery-item" href="https://jbaylonparane.github.io/" target="_blank" rel="noopener noreferrer">
+                <img src="https://drive.google.com/thumbnail?id=1T3oqZfijtG5Y9hnVCD246Wh5YALmpCv8" alt="Interior Design">
+                <h3>Project 6</h3>
+                <p>Interior Design</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
