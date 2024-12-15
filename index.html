@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(120deg, #e08c26, #9d7718);
+            color: #fff;
+        }
+
+        h1, h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        input[type="password"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            outline: none;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #9463c2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #2c8fad;
+        }
+
+        .locked-content {
+            display: none;
+            text-align: center;
+        }
+
+        /* Add some space between the link and the content */
+        a {
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        a:hover {
+            color: #2c8fad;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fuaso' Portfolio Gallery</h2>
+    <div id="passwordPrompt">
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    
+    <div id="lockedContent" class="locked-content">
+        <h3>Welcome, John Willford!</h3>
+        <h3>CLICK ME TO GO TO THE NEXT PAGE</h3>
+        <button onclick="goToNextPage()">Click Me</button>
+    </div>
+
+    
+
+    <script>
+        const correctPassword = "fuaso123"; // Desired password
+
+        function checkPassword() {
+            const userPassword = document.getElementById("password").value;
+            if (userPassword === correctPassword) {
+                document.getElementById("lockedContent").style.display = "block";
+                document.getElementById("passwordPrompt").style.display = "none";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+
+        function goToNextPage() {
+            // Redirect to the next page. Replace the URL as needed.
+            window.location.href = "https://johnwillfordfuaso.github.io/skipfuaso/";
+        }
+    </script>
+</body>
+</html>
